@@ -39,6 +39,10 @@
   border-radius: 50%;
 }
 
+.reactEasyCrop_CropAreaRoundRect {
+  border-radius: 10%;
+}
+
 .reactEasyCrop_CropAreaGrid::before {
   content: ' ';
   box-sizing: border-box;

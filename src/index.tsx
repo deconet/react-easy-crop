@@ -22,7 +22,7 @@ export type CropperProps = {
   aspect: number
   minZoom: number
   maxZoom: number
-  cropShape: 'rect' | 'round'
+  cropShape: 'rect' | 'round' | 'roundrect'
   cropSize?: Size
   showGrid?: boolean
   zoomSpeed: number
@@ -544,6 +544,7 @@ class Cropper extends React.Component<CropperProps, State> {
             className={classNames(
               'reactEasyCrop_CropArea',
               cropShape === 'round' && 'reactEasyCrop_CropAreaRound',
+              cropShape === 'roundrect' && 'reactEasyCrop_CropAreaRound',
               showGrid && 'reactEasyCrop_CropAreaGrid',
               cropAreaClassName
             )}
