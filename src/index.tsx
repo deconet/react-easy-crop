@@ -544,7 +544,7 @@ class Cropper extends React.Component<CropperProps, State> {
             className={classNames(
               'reactEasyCrop_CropArea',
               cropShape === 'round' && 'reactEasyCrop_CropAreaRound',
-              cropShape === 'roundrect' && 'reactEasyCrop_CropAreaRound',
+              cropShape === 'roundrect' && 'reactEasyCrop_CropAreaRoundRect',
               showGrid && 'reactEasyCrop_CropAreaGrid',
               cropAreaClassName
             )}
