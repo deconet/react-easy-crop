@@ -15,7 +15,7 @@ type State = {
   flip: { horizontal: boolean; vertical: boolean }
   zoom: number
   aspect: number
-  cropShape: 'rect' | 'round'
+  cropShape: 'rect' | 'round' | 'roundrect'
   showGrid: boolean
   zoomSpeed: number
   restrictPosition: boolean
@@ -30,7 +30,7 @@ class App extends React.Component<{}, State> {
     flip: { horizontal: false, vertical: false },
     zoom: 1,
     aspect: 4 / 3,
-    cropShape: 'rect',
+    cropShape: 'roundrect',
     showGrid: true,
     zoomSpeed: 1,
     restrictPosition: true,
