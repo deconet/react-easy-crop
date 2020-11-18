@@ -1,3 +1,7 @@
+# fork notes
+
+This fork adds the ability to crop around a round rect.
+
 # react-easy-crop
 
 A React component to crop images/videos with easy interactions
